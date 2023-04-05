@@ -27,8 +27,14 @@ void handleInput(sf::RectangleShape& paddle, float paddleSpeed)
 
 void checkCollision(sf::CircleShape& ball, sf::Vector2f& ballVelocity, sf::RectangleShape& leftPaddle, sf::RectangleShape& rightPaddle, sf::RenderWindow& window, int& player_points, int& opponent_points)
 {
-    if (ball.getPosition().y < 0.0f || ball.getPosition().y > 590.0f)
+    if (ball.getPosition().y < 0.0f)
     {
+        ball.setPosition(sf::Vector2f(ball.getPosition().x, 0.0f));
+        ballVelocity.y = -ballVelocity.y;
+    }
+    if (ball.getPosition().y > 590.0f)
+    {
+        ball.setPosition(sf::Vector2f(ball.getPosition().x, 590.0f));
         ballVelocity.y = -ballVelocity.y;
     }
     if (ball.getPosition().x < 0.0f)
