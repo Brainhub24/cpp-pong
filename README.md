@@ -1,6 +1,6 @@
 # C++ Pong
 
-This Pong game in C++ was made with the help of ChatGPT for a YouTube video, which you can watch here: 
+This Pong game in C++ was made with the help of ChatGPT for a YouTube video, which you can watch here: https://www.youtube.com/watch?v=w3dfLI8Q1Vs
 
 To compile and run the game, run:
 ```console
