@@ -171,7 +171,7 @@ int main()
         window.draw(ball);
 
         if( game_over ) {
-            // Create a text object for the opponent score
+            // Create a text object for the game over screen
             sf::Text gameOverText;
             gameOverText.setFont(font);
             gameOverText.setCharacterSize(74);
